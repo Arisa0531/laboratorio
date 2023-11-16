@@ -1,0 +1,565 @@
+body {
+    background-color: rgb(243, 243, 243);
+    margin: 0; /* Asegura que no haya margen en el cuerpo de la página */
+}
+
+.nav_principal {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    z-index: 1000;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+}
+
+.logo img {
+    width: 120px;
+    margin-top: -19px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    line-height: 2.5em; /* Ajusta según tus necesidades */
+}
+
+nav li {
+    font-weight: 600;
+    font-family: sans-serif;
+    
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.imagen_header {
+    aspect-ratio: 4 / 1;
+    border-radius: 0px;
+    position: relative;
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.1) 100%), url("https://64.media.tumblr.com/18e2b28baf73e32cea5c906de93bb4d5/4fac414ba4e39bf4-84/s2048x3072/c7e935d3df070772ed3e5f2ee88995231d0d7983.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 70px auto 0; /* Ajustado para centrar y dejar espacio para el nav fijo */
+}
+
+.imagen_header_cuadrada {
+    box-sizing: border-box;
+    border-radius: clamp(var(--global-radius-sm), 15%, var(--global-radius-lg));
+    width: 200px;
+    height: auto;
+    position: relative;
+    
+    /* Posicionamiento absoluto para superponerlo */
+    position: absolute;
+    top: 55%; /* Ajusta este valor según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto; /* Ajustado para centrar */
+}
+
+.imagen_header_cuadrada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Ajusta este valor según tus necesidades */
+}
+
+
+.contenedor {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Your-Desired-Font', sans-serif; /* Reemplaza 'Your-Desired-Font' con la fuente que prefieras */
+    font-size: 2em;
+    margin-top: 0; /* Elimina el margen superior predeterminado del h1 */
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(19, 18, 18);
+}
+
+.presentacion {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -0.5em;
+    color: #131313;
+    margin-bottom: 2em;
+}
+
+button.botton {
+    padding: 10px 20px;
+    font-size: 0.95em;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: #131313; /* Cambia este color según tus preferencias */
+    border: none; /* Elimina el borde */
+    color: #ffffff; /* Cambia este color según tus preferencias */
+    border-radius: 0.5em; /* Quita las esquinas (bordes redondeados) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nav_principal{
+    background-color: #ffffff;    
+}
+
+
+#boton_link_miembro{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5em; /* Ajusta el espaciado vertical según tus necesidades */
+    margin-top: 1em;
+}
+
+.logo {
+    margin: 0.2em; /* Espaciado entre las imágenes */
+    width: 20px; /* Ajusta el tamaño de los logos según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
+}
+
+#titulo_publicaciones{
+    font-family: 'Your-Desired-Font', sans-serif; /* Reemplaza 'Your-Desired-Font' con la fuente que prefieras */
+    font-size: 2em;
+    margin-top: 0; /* Elimina el margen superior predeterminado del h1 */
+    text-align: center;
+    margin-top: 35px;
+    color: rgb(19, 18, 18);
+}
+
+
+
+/***************2do Nav*****************/
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -5em; /* Ajusta el espaciado vertical según tus necesidades */
+    margin-bottom: -1em;
+}
+
+.nav2_inicio a,
+.menu a {
+    font-family:  Arial, sans-serif;
+    text-decoration: none;
+    color: #333333; /* Color del texto del logo y menú */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+hr{
+    color: #bbbbbb;
+}
+
+
+.titulo_suscripcion {
+    color: #131313; /* Color del texto, puedes ajustar según tus preferencias */
+    font-size: 2em; /* Tamaño del texto, puedes ajustar según tus preferencias */
+    font-family: sans-serif; /* Fuente del texto, puedes ajustar según tus preferencias */
+    margin: 2em; /* Margen alrededor del título, puedes ajustar según tus preferencias */
+    text-align: center; /* Alineación del texto, puedes ajustar según tus preferencias */
+}
+
+
+
+/***********Publicitario************/
+.body-contenido {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contenido {
+    max-width: 376px;
+    margin: 20px auto;
+    
+    background-color: #ffffff;
+}
+
+.encabezado-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    display: block;
+}
+
+.titulo-articulo {
+    font-family: 'Arial', sans-serif; /* Reemplaza con la fuente deseada */
+    font-size: 24px !important; /* Reemplaza con el tamaño de fuente deseado */
+    font-weight: normal; /* Reemplaza con el peso de fuente deseado */
+    line-height: 1em; /* Reemplaza con la altura de línea deseada */
+    letter-spacing: 1px; /* Reemplaza con el espaciado de letra deseado */
+    color: #333; /* Reemplaza con el color de texto deseado */
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+}
+
+#sumate{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.boton-descarga {
+    display: block;
+    width: 100%;
+    height: 3.2em;
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.lista-puntos {
+
+    font-size: 16px; /* Reemplaza con el tamaño de fuente deseado */
+    font-weight: 400; /* Reemplaza con el peso de fuente deseado */
+    line-height: 1.5; /* Reemplaza con la altura de línea deseada */
+    letter-spacing: 1px; /* Reemplaza con el espaciado de letra deseado */
+    color: #333; /* Reemplaza con el color de texto deseado */
+  
+}
+
+
+
+
+.punto {
+    margin-bottom: 5px;
+}
+/************************************************************************************************/
+
+.imgidea, .imgidea6 {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.idea1, .idea6{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    margin: 20px auto;
+    max-width: 600px; /* Establece un ancho máximo para el contenedor .idea1 si es necesario */
+    overflow: hidden; /* Evita que el contenido (la imagen) sobresalga del contenedor */
+    margin-bottom: 50px;
+}
+
+.texto-container, .texto-container6 {
+    padding: 20px; /* Añade un pequeño espacio interno */
+    
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imgidea2 {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.idea2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    margin: 20px auto;
+    max-width: 600px; /* Establece un ancho máximo para el contenedor .idea1 si es necesario */
+    overflow: hidden; /* Evita que el contenido (la imagen) sobresalga del contenedor */
+    margin-bottom: 50px;
+}
+
+
+.texto-container2 {
+    padding: 20px; /* Añade un pequeño espacio interno */
+    
+}
+.imgidea3{
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.idea3 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    margin: 20px auto;
+    max-width: 600px; /* Establece un ancho máximo para el contenedor .idea1 si es necesario */
+    overflow: hidden; /* Evita que el contenido (la imagen) sobresalga del contenedor */
+    margin-bottom: 50px;
+}
+
+
+.texto-container3 {
+    padding: 20px; /* Añade un pequeño espacio interno */
+    
+}
+
+.imgidea4 {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.idea4 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+    border-radius: 2em;
+    margin: 20px auto;
+    max-width: 600px; /* Establece un ancho máximo para el contenedor .idea1 si es necesario */
+    overflow: hidden; /* Evita que el contenido (la imagen) sobresalga del contenedor */
+    margin-bottom: 50px;
+}
+
+
+.texto-container4 {
+    padding: 20px; /* Añade un pequeño espacio interno */
+}
+
+.imgidea5 {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.idea5 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    margin: 20px auto;
+    max-width: 600px; /* Establece un ancho máximo para el contenedor .idea1 si es necesario */
+    overflow: hidden; /* Evita que el contenido (la imagen) sobresalga del contenedor */
+    margin-bottom: 50px;
+}
+
+
+.texto-container5{
+    padding: 20px; /* Añade un pequeño espacio interno */
+}
+
+.post {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+a button {
+    background-color: rgb(195, 188, 188);
+    color: rgb(47, 46, 46);
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.actions button {
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#comments-section {
+    margin-top: 10px;
+}
+
+#comments-section textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#comment-list {
+    margin-top: 10px;
+}
+
+#comment-input-6,#comment-input-5, #comment-input-4, #comment-input-3, #comment-input-2, #comment-input-1{
+    width: 90%;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+#comment-list-1, #comment-list-2, #comment-list-3, #comment-list-4, #comment-list-5, #comment-list-6{
+    margin-left: 2em;
+}
+
+.actions img {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    width: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+#like-icon {
+    width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.hidden {
+    display: none;
+}
+
+.suscribete_boton{
+    margin-top: -5em;
+}
+
+.comentar_boton{
+    margin-top: 1em;
+    margin-left: 19em;
+    margin-bottom: 1em;
+}
+/*********************************************************************************************/
+.footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px; /* Espaciado interno del footer */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+
+
+
+/*********************************************************************************/
+
+
+.menu-icon {
+    display: none; /* Oculta el ícono de menú en pantallas normales */
+}
+
+ /* Reglas de medios para diseño responsivo */
+ @media screen and (max-width: 1000px) {
+    
+    .imagen_header_cuadrada {
+        width: 20%; /* Ocupa el 100% del ancho del contenedor */
+        height: auto;
+        margin: 0; /* Elimina el margen */
+        position: relative; /* Restablece la posición */
+    }
+    .titulo{
+        margin-top: -2em;
+    }
+    .nav2_inicio a,
+    .menu a {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+}
+ @media screen and (max-width: 768px) {
+    .imagen_header {
+        margin-top: 50px; /* Ajusta según tus necesidades para dar espacio al menú de navegación */
+        padding-bottom: 200px; /* Ajusta según tus necesidades para dar espacio al contenido debajo de la imagen */
+    }
+
+    .imagen_header_cuadrada {
+        width: 40%; /* Ocupa el 30% del ancho del contenedor */
+        height: auto;
+        margin: 0 ; /* Centra la imagen horizontalmente */
+        position: relative; /* Restablece la posición */
+        top: -3em;
+    }
+
+    .nav2_inicio a,
+    .menu a {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+        padding: 8px; /* Ajusta el relleno de las anclas para pantallas pequeñas */
+        display: inline-block; /* Hace que las anclas aparezcan en la misma línea */
+        margin-right: 10px; /* Agrega un espacio entre las anclas */
+    }   
+
+    .titulo{
+        margin-top: -5em;
+    }
+
+    .nav_principal {
+        height: 5em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; /* Ajusta según la altura de tu barra de navegación */
+        left: 0;
+        background-color: #fff; /* Puedes ajustar el color de fondo según tu diseño */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav li {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    nav a {
+        padding: 10px 0;
+        display: block;
+        color: rgb(0, 0, 0);
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-right: 10px; /* Puedes ajustar según tu diseño */
+        line-height: 80px; /* Alinea verticalmente con la barra de navegación */
+    }
+}
+ /* Reglas de medios para diseño responsivo - Tamaño de pantalla pequeño */
+@media screen and (max-width: 510px) {
+
+
+    .imagen_header {
+        margin-top: 50px; /* Ajusta según tus necesidades para dar espacio al menú de navegación */
+        padding-bottom: 200px; /* Ajusta según tus necesidades para dar espacio al contenido debajo de la imagen */
+    }
+    
+
+    .imagen_header_cuadrada {
+        width: 70%; /* Ocupa el 30% del ancho del contenedor */
+        height: auto;
+        margin: 0 ; /* Centra la imagen horizontalmente */
+        position: relative; /* Restablece la posición */
+        top: -1em;
+    }
+    .titulo{
+        margin-top: -5em;
+    }
+
+}
