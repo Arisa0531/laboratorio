@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles/estilo_c.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="email">Correo electr&oacute;nico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comentarios:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <div class="buttons">
+                <button type="button" onclick="validateForm()"><a href="../../index.html" class="enviar_y_cancelar">Enviar</a></button>
+                <button type="button" onclick="resetForm()"><a href="../../index.html" class="enviar_y_cancelar">Cancelar</a></button>
+            </div>
+        </form>
+    </div>
+    <script defer src="/scripts/script_c.js"></script>
+</body>
+</html>

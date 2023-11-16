@@ -1,0 +1,61 @@
+.container h2 {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../images/nublado.jpg');
+    background-size: cover; /* Ajusta automáticamente el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+
+.container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #2cea06;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(228, 206, 206, 0.1);
+    background-color: rgb(19, 18, 18);
+}
+
+label {
+    color: azure;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #2cea06;
+}
+
+button:active {
+    background-color: rgb(11, 11, 11);
+}
+
+.enviar_y_cancelar{
+    text-decoration: none;
+    color: black;
+}
